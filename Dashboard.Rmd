@@ -1,0 +1,102 @@
+---
+title: "Some Common & Uncommon Sense"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    social: menu
+    source: embed
+    theme: simplex
+    css: ts.css
+---
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+Source: [Kevin Gray](https://www.linkedin.com/pulse/hardhat-stats-some-common-uncommon-sense-kevin-gray/)
+
+### **Assumptions**
+Be careful about making **assumptions**. Period.
+
+### **Technology**
+**Be focused on decisions, not technology**. I've turned down work because I realized that all that was really needed were a few questions and a couple of cross tabs, not the fancy analytics I love. Technology can help or hinder - it's not a one-way street.
+
+### **Understand the Problem**
+Do your homework. Try to put yourself in your client's shoes and **understand** their business, their point of view, how they make decisions and the information they use to make decisions.
+
+
+### **Decision Quality**
+Think seriously about how analysis quality impacts **decision quality**. Below a certain quality threshold, the risk of bad decisions can skyrocket. Where that threshold is depends on the circumstances, but we seldom know in advance where it is. "70%" may be good enough...or a disaster. Doing things on the cheap can be very expensive.
+
+
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### **Don't Just Press Buttons**
+Recognize that Statistics and Data Science are not just math and programming, or point-and-click software. It's **part science, part art and multifaceted**. Experience and subject matter expertise are very important.
+
+### **Cookie Cutters**
+**Avoid cookie cutters**. For example, machine learners are often better at pattern recognition than the statistical methods most of us are familiar with but are usually very difficult to interpret. They don't tell us much about the Why. Even more crucially, nearly any method has many options and requires a number of choices. Always going with the default settings is very bad practice.
+
+### **Sweatshops**
+Be wary of **sweatshop** statistics...cranking out zillions of models in mechanical fashion with only cursory checking and little effort to see if they make sense and will be of use to decision makers. Caveat Emptor
+
+### **Interpretation**
+**Interpret data directionally**, not absolutely. Even in extraordinary cases when data are near "perfect" - i.e., when sampling, coverage, non-response and measurement errors are trivial - data speak most clearly to us when placed in context. Look for patterns in data, not just for statistically significant differences between groups of respondents or customers. Meaning is in the mind, not in the math.
+
+
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### **Sampling**
+Understand that accurate predictive models rarely need to be built on **all the data** we have. Millions of records usually aren't needed for model building and samples are typically sufficient. Statistical inference, after all, was developed primarily for small samples - teeny-tiny data by today's standards. Moreover, some "big data" aren't really very big, just wide, with the same variables repeated over and over again. Often transaction data, for example, can be collapsed into weekly or monthly periods for the analyses we need to run.  
+
+### **Causes**
+Think multivariate. **Most effects have multiple causes** and just looking at a total column or cross tab may be very misleading. A lot of good data go to waste because they aren't analyzed beyond simple cross tabs and graphics...descriptive information is not insights!
+
+### **A Simplified Reality**
+Understand that even complex statistical models are **simplified representations of reality**. This is one reason why automated modeling can be so risky - it's not at all uncommon for two or more models to be equivalent statistically but suggest very different courses of action for decision-makers. A mere number-cruncher wouldn't know which to recommend or whether it might be better to go back to the drawing board.
+
+### **Gut Decisions**
+**Try to prove yourself wrong!** Don't just go with your gut when making decisions, and check your thinking to see if it is internally consistent and supported by empirical evidence (not cherry-picked data). Use experimentation when you can. Causal analysis is a hot topic among researchers and academics in many fields.
+
+
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### **Practical vs. Statistical Significance**
+Don't confuse **statistical significance** with **importance**. Different beasts. On the other hand, p-values, etc., should not simply be dismissed as meaningless...be mindful of the human tendency to think dichotomously! 
+
+### **Size of Data**
+Understand that a **large number of measurements** made on a small sample is not the same as having a large sample. While many measurements on a respondent may (or may not) improve measurement precision for that respondent, it does not increase the number of respondents in our sample.
+
+### **Chance Events**
+Appreciate how important **chance events** are in our work (and daily lives). I can wholeheartedly recommend David Hand's book The Improbability Principle to anyone.
+
+### **Shock and Awe**
+Don't be **overawed** by the opinions of "thought leaders" or other self-proclaimed authority figures in the business world. In other contexts, Albert Einstein counseled against this. And he was a real Einstein.
+
+
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### **Uncertainty**
+**Embrace ambiguity**, or at least learn to be tolerant of it! Many business areas draw heavily from the social and behavioral sciences, which lack quantifiable natural laws. Statistics is nowhere near as cut and dried as it might appear from an introductory course. At the more advanced levels there is often little consensus among statisticians as to what works best in similar situations.
+
+### **Details**
+Watch out for the **Devil in the Details**. Example: Though it isn't the end of the world if you use statistical methods intended for cross-sectional data on time-series data, it isn't good practice and can lead us astray. If you're new to time-series analysis, here's a primer.
+
+### **Importance**
+Realize that "importance" is in the eye of the **decision-maker**. Unfortunately, decision-makers are often not clear what they mean by "important" and it can connote several things to statisticians. To decision-makers it often implies impact on the bottom line but, when asked about importance, statisticians should pin down specifically what the questioner has in mind. This can be a very hard question and is not something a computer can answer for us.
+
+### **Hype**
+Don't over-react to **hype**. Believing everything we hear is risky but so is rejecting everything we hear. True, a lot of claims about disruptive innovation are downright silly, but that doesn't mean it's OK to just to stick to what we know. I'm no soothsayer but my bet is that the world and MR will be very different in 15 years, and I want to be ready for it.
